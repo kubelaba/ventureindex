@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kube — Fellowship Application</title>
+<style>
+  :root {
+    --bg: #0e0e10;
+    --surface: #161619;
+    --border: #2a2a30;
+    --text: #e8e8ea;
+    --muted: #9a9aa2;
+    --accent: #c9a84a;
+    --mono: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+    --serif: Georgia, "Times New Roman", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    line-height: 1.6;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  .card {
+    width: 100%;
+    max-width: 620px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 44px 40px;
+    margin: 40px 0;
+  }
+  .domain {
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    color: var(--muted);
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 28px;
+  }
+  h1 {
+    font-family: var(--serif);
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin-bottom: 4px;
+  }
+  .tagline {
+    color: var(--muted);
+    font-size: 0.98rem;
+    margin-bottom: 36px;
+  }
+  .section { margin-bottom: 30px; }
+  .label {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+  .section p { font-size: 1rem; }
+  .section p + p { margin-top: 10px; }
+  code.inline {
+    font-family: var(--mono);
+    font-size: 0.86em;
+    background: #000;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1px 6px;
+    color: var(--text);
+  }
+  .code-box {
+    margin-top: 40px;
+    padding-top: 26px;
+    border-top: 1px solid var(--border);
+  }
+  .code-box .label { margin-bottom: 10px; }
+  .code {
+    font-family: var(--mono);
+    font-size: 1.15rem;
+    letter-spacing: 0.18em;
+    border: 1px dashed var(--border);
+    border-radius: 6px;
+    padding: 12px 18px;
+    display: inline-block;
+    color: var(--text);
+  }
+</style>
+</head>
+<body>
+  <main class="card">
+    <div class="domain">kube-for-jv.carrd.co</div>
+
+    <h1>Kube</h1>
+    <p class="tagline">Homelab tinkerer who runs multiple Kubernetes clusters at home — for the fun of figuring out how things actually work.</p>
+
+    <div class="section">
+      <div class="label">Who I am</div>
+      <p>I'm a builder and a tinkerer. I run KubeLaba, a self-hosted homelab where I stand up real infrastructure and break it on purpose until I understand it. Most of what I know, I know because I took it apart.</p>
+    </div>
+
+    <div class="section">
+      <div class="label">Something I taught myself</div>
+      <p>In the last few months I built out GitOps across my home Kubernetes clusters with <code class="inline">Flux</code>, so the cluster state lives in Git and reconciles itself instead of me applying manifests by hand. I paired it with <code class="inline">Ansible</code> to automate the box-level setup underneath — the parts that used to be a manual slog every time I rebuilt a node.</p>
+      <p>I learned it the unglamorous way: the official docs, a lot of trial and error, and breaking the cluster repeatedly until the reconcile loop did what I expected. The homelab is the whole point — it's a place where failing is cheap and the only way out is understanding it.</p>
+    </div>
+
+    <div class="section">
+      <div class="label">Why I want this</div>
+      <p>My background is infrastructure and security — networking, cloud, and lately digging into SASE. What pulls me now is the AI layer: how modern AI and AI agents actually work, and what they make buildable that wasn't before. I want to stop wishing for tools and start building them. A studio that backs builders in the AI economy — up the road in Baltimore, no less — is exactly the push I'm looking for.</p>
+    </div>
+
+    <div class="code-box">
+      <div class="label">Application code</div>
+      <div class="code">JV-57DG-CV</div>
+    </div>
+  </main>
+</body>
+</html>
